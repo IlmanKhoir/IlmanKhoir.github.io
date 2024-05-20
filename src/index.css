@@ -11,3 +11,381 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }
+
+@font-face {
+  font-family: KarlaExtraBold;
+  src: url(../public/font/Karla-ExtraBold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: KarlaBoldItalic;
+  src: url(../public/font/Karla-BoldItalic.ttf);
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+.navbar{
+  width:100vw;
+  height: 95px;
+  font-family: KarlaExtraBold;
+  font-size: 20px;
+
+}
+
+.nav-link {
+  margin-right: 30px;
+  padding-right: auto;
+  margin-left: 15px;
+}
+
+.dropdown-basic {
+  font-family: KarlaExtraBold;
+}
+
+.Headline{
+  text-align: center;
+  font-family: KarlaExtraBold;
+  margin-top: -70vh;
+  font-size: 90px;
+}
+
+.bio{
+  font-family: KarlaExtraBold;
+  margin-top: -18px;
+  font-size: 30px;
+}
+
+.about  {
+  padding-top: 20px;
+}
+
+.Nusantara{
+  text-align: center;
+  font-size: 35px;
+  font-family: KarlaExtraBold;
+  color:white
+}
+
+.Landscape{
+  padding-left: 15vw;
+
+}
+
+.carousel-inner-text{
+  font-family: KarlaBoldItalic;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.carousel-control-prev {
+  margin-top: 50px ;
+}
+
+.carousel-control-next {
+  margin-top: 50px;
+}
+
+
+.Thecrew {
+  margin-top:175px ;
+  font-family: KarlaExtraBold;
+  font-size: 400px;
+  text-align: center;
+  color: white;
+}
+.crew{
+  margin-left: 210px;
+  
+}
+.crew img{
+  border-radius: 100px;
+  margin-right: 50px;
+}
+
+.project {
+  margin-top: 80px;
+  font-family: KarlaExtraBold;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
+.video {
+  margin-left: 270px;
+  padding-bottom: 100px;
+}
+
+footer {
+  height: auto;
+  background-color: #1b1b1b;
+  text-align: center;
+  margin: 0px -40px;
+  padding: 0px;
+  position: relative;
+
+}
+
+.backgroud-food-page {
+  font-family: Arial, sans-serif;
+  background-size: cover; /* Menutupi seluruh halaman */
+  background: url(./assets/images/backgroung-food-page.png);
+  background-size: cover;
+  background-position: center; /* Pusatkan gambar */
+  color: #333;
+}
+
+.backgroud-place-page {
+  font-family: Arial, sans-serif;
+  background-size: cover; /* Menutupi seluruh halaman */
+  background: url(./assets/images/background-dest-page.jpeg);
+  background-size: cover;
+  background-position: center; /* Pusatkan gambar */
+  color: #333;
+}
+
+.food-grid, .place-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  
+}
+.food-item, .place-item {
+  perspective: 1000px;
+}
+
+.card-food, .card-place {
+  width: 100%;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  box-shadow: black 5px 5px 5px;
+}
+
+.card-food.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-place.is-flipped {
+  transform: rotateY(180deg);
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-photo {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.food-name{
+  padding: 10px;
+  color: white;
+}
+.food-name1{
+  color: black;
+}
+.food-description {
+  color: #030303;
+}
+.learn-more {
+  text-decoration: none;
+  color: white;
+  background-color: #030303;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-back {
+  padding: 20px;
+  height: 300px;
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.place-name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 800;
+  color: #3498db;
+}
+
+.place-description {
+  margin-top: 10px;
+  font-size: large;
+  color: #3498db;
+}
+
+.place-learn-more {
+  text-decoration: none;
+  color: white;
+  background-color: #3498db;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Rent Price Section */
+
+.card-rent {
+  background: url(./assets/images/gggg.jpeg);
+  background-size: cover;
+  border: 2px solid #443f56;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-rent-flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.backgroud-rent-page {
+  background: url(./assets/images/background-rent-page.jpeg);
+  background-size: cover;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Contact Section */
+.chat-container {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 80%;
+}
+
+.message.me {
+  background-color: #007bff;
+  color: #fff;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  color: #000;
+  margin-right: auto;
+  text-align: left;
+}
+
+.chat-inputs {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input-me {
+  display: flex;
+}
+
+.chat-input-me input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-input-me button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input-me button:hover {
+  background-color: #0056b3;
+}
+
+/* Payment Section */
+
+.payment-container{
+  background-color: rgba(255, 255, 255, 0.400); 
+  width: 600px;
+  margin: 50px auto;
+  padding: 50px auto;
+}
+
+.background-payment {
+  background: url(./assets//wisata/Air\ Terjun\ Takapala.jpeg);
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}

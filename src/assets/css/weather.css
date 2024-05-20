@@ -1,0 +1,94 @@
+.weather-background {
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Menutupi seluruh halaman */
+    background: url(../images/bg-weather.jpg);
+    background-size: cover;
+    min-height: 86vh;
+    max-height: 100%;
+    background-position: center; /* Pusatkan gambar */
+    color: #333;
+  }
+
+.weatherForm {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan form */
+}
+
+.cityInput {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 20%, 0.3); /* Perbaikan properti warna */
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Perbaikan penulisan padding */
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px; /* Tambahkan margin atas untuk memberi jarak tambahan */
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);
+}
+
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Tambahkan margin atas untuk memberi jarak dari form */
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+}
